@@ -214,6 +214,7 @@ margin-left: 10px;
     }
     .our-plants h1{
         font-size: 24px;
+        margin-top: 65px;
     }
 
     .items{
@@ -246,18 +247,76 @@ margin-left: 10px;
 .flowerandplantslover{
     display: flex;
     justify-content: center;
-    align-items: center;
-    border: 1px solid tomato;
+    margin:210px 10%;
 }
-.flowerandplantslover img{
-width: 100%;
+
+.adjust-images{
+    position: relative;
 }
+
+.adjust-images img{
+width: 540px;
+display: block;
+}
+
+.extra{
+    position: absolute;
+    top:-115px;
+    right: -100px;
+    width: 286px;
+    filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));;
+}
+.extra img{
+    width: 100%;
+}
+
+.flower-details{
+    margin-left: 60px;
+    margin-top:38px;
+
+}
+
 .fpl-h1{
     font-size: 50px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .fpl-p{
     font-size: 22px;
     color:rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    font-family: inter;
+}
+
+/* for iphone  */
+@media screen and (max-width: 430px) {
+    .flowerandplantslover{
+        flex-direction: column;
+        margin-top: 41px;
+        margin-left: 14px;
+        margin-right: 14px;
+        align-items: center;
+    }
+
+    .flower-details{
+        margin: 40px 22px 130px 22px;
+    }
+
+    .flowerandplantslover img{
+        width: 358px;
+    }
+    
+    .extra{
+        display: none;
+    }
+
+    .fpl-h1{
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .fpl-p{
+        font-size: 14px;
+    }
 }
